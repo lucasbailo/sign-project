@@ -14,6 +14,10 @@ const cargos = [
   "Coordenador Jurídico",
   "Diretor Financeiro",
   "Sócio",
+  "Desenvolvedor",
+  "Analista de RH",
+  "Analista De Marketing",
+  "Analista de TI"
 ];
 
 function App() {
@@ -59,8 +63,8 @@ function App() {
           </select>
         </div>
       </div>
-      <div ref={divRef} className='flex h-[150px] w-[610px]'>
-        <div className='bg-[#201E1F] w-full h-full p-9 flex justify-center pr-14 flex-col'>
+      <div ref={divRef} className='flex h-[160px] w-[660px]'>
+        <div className='bg-[#201E1F] w-[80%] h-full p-9 flex justify-center pr-14 flex-col'>
           <div className='flex items-center justify-end'>
             <img src={logoPalin} alt="" className='w-[205px]' />
           </div>
@@ -69,7 +73,7 @@ function App() {
             <p className='text-[#6A6869] text-xs'>{cargo}</p>
           </div>
         </div>
-        <div className='bg-[#D9D6C7] w-full flex flex-col justify-center p-5 gap-2 text-xs'>
+        <div className='bg-[#D9D6C7] w-full flex flex-col justify-center p-5 pl-15 gap-2 text-[10px] font-bold'>
           <p>17 99707-7041   3301-2564</p>
           <p>Rua Bernardino de Campos, 3522, sl 12, Centro</p>
           <p>São José do Rio Preto/SP, CEP 15015-300</p>
