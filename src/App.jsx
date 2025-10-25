@@ -55,12 +55,7 @@ function App() {
         </div>
         <div className='flex flex-col gap-1'>
           <label htmlFor='cargo'>Cargo:</label>
-          <select id='cargo' type="text" className='border-2 p-2' value={cargo} onChange={(e) => setCargo(e.target.value)} >
-            <option value="">Selecione um cargo</option>
-            {cargos.map((cargo, index) => (
-              <option key={index} value={cargo}>{cargo}</option>
-            ))}
-          </select>
+          <input id='cargo' type="text" className='border-2 p-2' placeholder='Digite seu cargo' value={cargo} onChange={(e) => setCargo(e.target.value)} />
         </div>
       </div>
       <div ref={divRef} className='flex h-[160px] w-[660px]'>
